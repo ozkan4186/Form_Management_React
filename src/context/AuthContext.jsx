@@ -1,9 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const AuthContext = () => {
+
+//AuthContext yapısı oluşturduk
+export const AuthContext=createContext()
+
+
+const AuthProvider = ({children}) => {
+  const [user, setUser] = useState({
+    Firstname: "",
+    Lastname: "",
+    Password: "",
+    Email: "",
+    PhoneNumber: "",
+    City: "",
+    login:false
+  });
+const values={user,setUser}
+
   return (
-    <div>AuthContext</div>
+    <AuthContext.Provider value={values} >
+{children}
+
+    </AuthContext.Provider>
   )
 }
 
-export default AuthContext
+export default AuthProvider
