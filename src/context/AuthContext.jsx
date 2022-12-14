@@ -13,7 +13,7 @@ const AuthProvider = ({children}) => {
     Email: "",
     PhoneNumber: "",
     City: "",
-    login:true
+    login:false
   });
 
 
