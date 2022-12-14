@@ -11,3 +11,91 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.navs{
+  padding: 5rem;
+
+
+  
+}
+.tem{
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.tem:hover{
+  background-color:crimson ;
+  border-radius: 10px;
+}
+.buttona {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 1rem 2rem;
+  transition: 0.5s;
+  position: relative;
+  font-size: 36px;
+  background: #333;
+  border: none;
+  color: #fff;
+}
+
+.buttona:hover {
+  letter-spacing: 0.25em;
+  background: #ff1867;
+  color: #ff1867;
+  box-shadow: 0 0 45px #ff1867;
+}
+
+.buttona::before {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: #222222;
+}
+
+.buttona span {
+  position: relative;
+  z-index: 1;
+}
+
+.buttona i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.buttona i::before {
+  content: '';
+  position: absolute;
+  border: 2px solid #ff1867;
+  width: 7px;
+  height: 4px;
+  top: -3.5px;
+  left: 80%;
+  background: #222222;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+
+.buttona:hover i::before {
+  width: 20px;
+  left: 20%;
+}
+
+.buttona i::after {
+  content: '';
+  position: absolute;
+  border: 2px solid #ff1867;
+  width: 7px;
+  height: 4px;
+  bottom: -3.5px;
+  left: 20%;
+  background: #222222;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+
+.buttona:hover i::after {
+  width: 20px;
+  left: 80%;
+}
