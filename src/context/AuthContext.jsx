@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { createContext, useState } from 'react'
 
 
 //AuthContext yapısı oluşturduk
@@ -13,9 +13,11 @@ const AuthProvider = ({children}) => {
     Email: "",
     PhoneNumber: "",
     City: "",
-    login:false
+    login:true
   });
-const values={user,setUser}
+
+
+ const values={user,setUser}
 
   return (
     <AuthContext.Provider value={values} >
