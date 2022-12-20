@@ -26,7 +26,21 @@ function BasicExample() {
   
 
   return (
-    <Form  onSubmit={handleSubmit} className=" d-flex  w-25 m-auto  ">
+    <Form
+      onSubmit={handleSubmit}
+      style={{
+        maxWidth: "40rem",
+        margin: "0 auto",
+        width: "80%",
+        boxShadow: "1px 1px 10px 1px black",
+        borderRadius: "20px",
+        padding: "3rem",
+        fontWeight: "bold",
+        fontSize:"2rem",
+        backgroundColor:"#faf6f655",
+        
+      }}
+    >
       <div>
         <Form.Group className="mb-3">
           <Form.Label>Email</Form.Label>
@@ -48,22 +62,11 @@ function BasicExample() {
             id="Password"
           />
         </Form.Group>
-        <Button
-       
-          variant="primary"
-          type="submit"
-        >
+        <Button className="m-3" variant="primary" type="submit">
           Submit
         </Button>
-      </div>
-      <div>
-        <img
-          className="w-75 h-75 rounded"
-          src="https://picsum.photos/200/300"
-          alt=""
-        />
-        <br /> <br />
         <Button
+          className="m-3"
           onClick={() => navigate("/register")}
           variant="primary"
           type="submit"
