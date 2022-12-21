@@ -56,4 +56,13 @@ export const data = [
       "https://media.licdn.com/dms/image/D4E35AQG9ioNjTK1wFA/profile-framedphoto-shrink_800_800/0/1649875500173?e=1671786000&v=beta&t=mkAee-qBui3rjGkjayknHcJVS3imqyGK90bNIgic6bY",
     linkedin: "https://www.linkedin.com/in/omercinarr00/",
   },
+  {
+    id: 5,
+    title: "Uğur İzzet",
+    email: "izzetonal46@gmail.com",
+    image:
+      "https://media.licdn.com/dms/image/D4D35AQH8MEXOgrv2SQ/profile-framedphoto-shrink_200_200/0/1666263924927?e=1672228800&v=beta&t=mWe5sZxvCTWtYxxOCtwE-X2Flaad0Hn3WrLSM10aMRA",
+
+    linkedin: "https://www.linkedin.com/in/ugur-izzet-onal/",
+  },
 ];
